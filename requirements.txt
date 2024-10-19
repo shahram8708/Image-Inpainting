@@ -1,0 +1,7 @@
+torch
+diffusers
+transformers
+Pillow
+matplotlib
+requests
+xformers
