@@ -19,7 +19,7 @@ Each model is used to inpaint an image with a given mask and prompt, and the res
    A more advanced and highly detailed model used to generate the same elven castle in a higher quality output.
 
 ## Features
-- **Inpainting with Kandinsky 2.2**: Uses the pre-trained `Kandinsky` inpainting pipeline.
+- **Inpainting**: Uses the multi pre-trained model inpainting pipeline.
 - **Custom Masking**: Provides a mechanism to apply masks to an image and regenerate parts of the image based on the user's prompt.
 - **Memory Efficient**: With xformers support, the pipeline is optimized for memory usage.
 
