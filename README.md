@@ -1,16 +1,29 @@
-## Kandinsky Image Inpainting
+# Multi-Model Image Inpainting
 
-### Overview
-This repository contains an inpainting pipeline using the [Kandinsky 2.2 Decoder](https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder-inpaint) from Hugging Face. Inpainting allows you to modify or fill missing parts of an image based on a given prompt.
+This project demonstrates image inpainting using three different pre-trained models from the `diffusers` library: 
+- Kandinsky Inpainting
+- Stable Diffusion Inpainting (runwayml)
+- Stable Diffusion XL Inpainting
 
-The pipeline leverages `torch` for deep learning, `diffusers` from Hugging Face for handling inpainting tasks, and `xformers` for efficient memory usage.
+Each model is used to inpaint an image with a given mask and prompt, and the results are displayed using `matplotlib`.
 
-### Features
+## Models Used:
+
+1. **Kandinsky Inpainting**  
+   Uses the model from the Kandinsky community to inpaint an image based on a prompt describing a black cat.
+   
+2. **Stable Diffusion Inpainting (runwayml)**  
+   This model generates a fantasy castle inspired by the world of "Lord of the Rings" using inpainting.
+   
+3. **Stable Diffusion XL Inpainting**  
+   A more advanced and highly detailed model used to generate the same elven castle in a higher quality output.
+
+## Features
 - **Inpainting with Kandinsky 2.2**: Uses the pre-trained `Kandinsky` inpainting pipeline.
 - **Custom Masking**: Provides a mechanism to apply masks to an image and regenerate parts of the image based on the user's prompt.
 - **Memory Efficient**: With xformers support, the pipeline is optimized for memory usage.
 
-### How it Works
+## How it Works
 
 - **Initial Image**: The image you want to modify.
 - **Mask**: The area of the image you want to fill with new content.
